@@ -47,31 +47,6 @@ Each algorithm section contains demo links to [Jupyter NBViewer](http://nbviewer
 
 The list of datasets that is being used for Python and Jupyter Notebook demos may be found in [tools folder](tools).
 
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-If you want to deploy
-
 ## Built With
 
 * [Python 3](https://www.python.org) - Python
