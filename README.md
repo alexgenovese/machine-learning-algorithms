@@ -49,7 +49,7 @@ The list of datasets that is being used for Python and Jupyter Notebook demos ma
 
 ## Built With
 
-* [Python 3](https://www.python.org) - Python
+* [Python 3](https://www.python.org)
 
 ## Contributing
 
