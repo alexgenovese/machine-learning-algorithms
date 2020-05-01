@@ -11,8 +11,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-## Prerequisites
-
 #### Installing Python
 
 Make sure that you have [Python installed](https://realpython.com/installing-python/) on your machine.
