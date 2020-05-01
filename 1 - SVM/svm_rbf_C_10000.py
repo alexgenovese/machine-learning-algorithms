@@ -32,12 +32,13 @@ clf = svm.SVC(kernel='rbf', C=10000.0)
 
 t0 = time()
 clf.fit(features_train, labels_train)
-print "training time: ", round(time() - t0, 3), " s"
+print("training time: ", round(time() - t0, 3), " s")
 
 t1 = time()
 predict = clf.predict(features_test)
-print "testing time: ", round(time() - t1, 3), " s"
+print("testing time: ", round(time() - t1, 3), " s")
 
 t2 = time()
 score = clf.score(features_test, labels_test)
-print "scoring time: ", round(time() - t2, 3), " s", "scoring: ", score
+print("scoring time: ", round(time() - t2, 3), " s", "scoring: ", score)
+

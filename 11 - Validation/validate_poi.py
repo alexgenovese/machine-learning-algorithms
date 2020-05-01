@@ -35,7 +35,7 @@ dt.predict(features)
 # would make you think you were doing amazingly well, but as you already know,
 # that's exactly what holdout test data is for...
 _score = dt.score(features, labels)
-print "SCORE: ", _score
+print("SCORE: ", _score)
 
 from sklearn.cross_validation import train_test_split
 
@@ -45,4 +45,4 @@ dt.fit(X_train, y_train)
 dt.predict(X_test, y_test)
 
 _score = dt.score(X_test, y_test)
-print "SCORE: ", _score
+print("SCORE: ", _score)

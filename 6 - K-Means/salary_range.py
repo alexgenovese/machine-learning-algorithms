@@ -4,9 +4,6 @@
     Skeleton code for k-means clustering mini-project.
 """
 
-
-
-
 import pickle
 import numpy
 import sys
@@ -25,5 +22,5 @@ for k, i in data_dict.items():
 
 salary_arr = sorted(salary_arr)
 
-print "Max: ", salary_arr[len(salary_arr)-1]
-print "Min: ", salary_arr[0]
+print("Max: ", salary_arr[len(salary_arr)-1])
+print("Min: ", salary_arr[0])

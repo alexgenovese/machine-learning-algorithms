@@ -34,15 +34,15 @@ labels_train = labels_train[:len(labels_train)/100]
 cls = GaussianNB()
 t0 = time()
 fit = cls.fit(features_train, labels_train)
-print "training time: ", round(time()-t0, 3), " s", "fit score: ", fit
+print("training time: ", round(time()-t0, 3), " s", "fit score: ", fit)
 
 t1 = time()
 pred = cls.predict(features_test)
-print "testing time: ", round(time()-t1,3)," s"
+print("testing time: ", round(time()-t1,3)," s")
 
 t2 = time()
 accuracy_score = cls.score(features_test, labels_test)
-print "scoring time:", round(time()-t2, 3), "s", "accuracy_score: ", accuracy_score
+print("scoring time:", round(time()-t2, 3), "s", "accuracy_score: ", accuracy_score)
 
 
 

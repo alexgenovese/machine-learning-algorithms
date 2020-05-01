@@ -28,15 +28,15 @@ cls = DecisionTreeClassifier(min_samples_split=40)
 
 t0 = time()
 cls.fit(features_train, labels_train)
-print "training time: ", round(time() - t0, 3), " s"
+print("training time: ", round(time() - t0, 3), " s")
 
 t1=time()
 cls.predict(features_test)
-print "testing time: ", round(time() - t1, 3), " s"
+print("testing time: ", round(time() - t1, 3), " s")
 
 t2=time()
 _score = cls.score(features_test, labels_test)
-print "score time: ", round(time() - t2, 3), " s", "SCORE: ", _score
+print("score time: ", round(time() - t2, 3), " s", "SCORE: ", _score)
 
 # What's the number of features in your data?
-print len(features_train[0])
+print(len(features_train[0]))

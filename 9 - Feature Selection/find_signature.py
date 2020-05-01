@@ -49,7 +49,7 @@ score = clf.score(features_test, labels_test)
 
 # the test performance has an accuracy much higher than it is expected to be
 # if we are overfitting, then the test performance should be relatively low
-print "Score on TEST in Decision Tree overfitting: ", score
+print("Score on TEST in Decision Tree overfitting: ", score)
 
 
 # What s the importance of the most important feature?
@@ -63,5 +63,5 @@ for i in clf.feature_importances_:
 
     index += 1
 
-print most_important_word_value, index_most_important_word
-print name[index_most_important_word]
+print(most_important_word_value, index_most_important_word)
+print(name[index_most_important_word])

@@ -4,9 +4,6 @@
     Skeleton code for k-means clustering mini-project.
 """
 
-
-
-
 import pickle
 import numpy
 import matplotlib.pyplot as plt
@@ -74,4 +71,4 @@ pred = classifier.predict(finance_features)
 try:
     Draw(pred, finance_features, poi, mark_poi=True, name="3_features_clusters.pdf", f1_name=feature_1, f2_name=feature_2)
 except NameError:
-    print "no predictions object named pred found, no clusters to plot"
+    print("no predictions object named pred found, no clusters to plot")

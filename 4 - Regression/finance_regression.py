@@ -42,14 +42,14 @@ reg = linear_model.LinearRegression()
 reg.fit(feature_train, target_train)
 
 reg.predict(feature_test)
-print "Slope: ", reg.coef_
-print "Intercept: ", reg.intercept_
+print("Slope: ", reg.coef_)
+print("Intercept: ", reg.intercept_)
 
-print "###### - stats on test dataset - #######"
-print "r-squared score: ", reg.score(feature_test, target_test)
+print("###### - stats on test dataset - #######")
+print("r-squared score: ", reg.score(feature_test, target_test))
 
-print "###### - stats on training dataset - #######"
-print "r-squared score: ", reg.score(feature_train, target_train)
+print("###### - stats on training dataset - #######")
+print("r-squared score: ", reg.score(feature_train, target_train))
 
 
 ### draw the scatterplot, with color-coded training and testing points
@@ -71,8 +71,8 @@ except NameError:
 
 reg.fit(feature_test, target_test)
 plt.plot(feature_train, reg.predict(feature_train), color="c")
-print "Slope new: ", reg.coef_
-print "Intercept new: ", reg.intercept_
+print("Slope new: ", reg.coef_)
+print("Intercept new: ", reg.intercept_)
 
 plt.xlabel(features_list[1])
 plt.ylabel(features_list[0])

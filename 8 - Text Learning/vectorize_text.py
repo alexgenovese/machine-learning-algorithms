@@ -75,8 +75,8 @@ for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
 
             email.close()
 
-print "emails processed "
-print word_data[152]
+print("emails processed ")
+print(word_data[152])
 from_sara.close()
 from_chris.close()
 

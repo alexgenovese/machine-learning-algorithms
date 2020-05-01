@@ -30,4 +30,4 @@ salary_arr = sorted(salary_arr)
 scaler = MinMaxScaler()
 rescaled_salary = scaler.fit_transform(salary_arr)
 
-print rescaled_salary
+print(rescaled_salary)

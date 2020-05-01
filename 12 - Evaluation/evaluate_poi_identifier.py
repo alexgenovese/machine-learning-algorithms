@@ -34,7 +34,7 @@ dt.predict(features)
 # would make you think you were doing amazingly well, but as you already know,
 # that's exactly what holdout test data is for...
 _score = dt.score(features, labels)
-print "SCORE: ", _score
+print("SCORE: ", _score)
 
 from sklearn.cross_validation import train_test_split
 # features_train, features_test, labels_train, labels_test
@@ -44,7 +44,7 @@ dt.fit(X_train, y_train)
 predicted = dt.predict(X_test, y_test)
 
 _score = dt.score(X_test, y_test)
-print "SCORE: ", _score
+print("SCORE: ", _score)
 
 #----------------------------------------------------------
 #
@@ -61,13 +61,13 @@ for k in np.array(y_test):
     if k == 1:
         pois_predicted_in_test_data += 1
 
-print "POIs predicted for the test set: ", pois_predicted_in_test_data
+print("POIs predicted for the test set: ", pois_predicted_in_test_data)
 
 #----------------------------------------------------------
 #
 # Number of People in test set
 #
-print len(y_test)
+print(len(y_test))
 
 #----------------------------------------------------------
 #
@@ -81,16 +81,16 @@ print len(y_test)
 #
 
 of_true_positives = [(x,y) for x, y in zip(predicted, y_test) if x == y and x == 1.0]
-print "True positives on the Overfitted model: ", len(of_true_positives)
+print("True positives on the Overfitted model: ", len(of_true_positives))
 
 
 from sklearn.metrics import precision_score
 p_score = precision_score( y_test, predicted )
 
-print "Precision score: ", p_score
+print("Precision score: ", p_score)
 
 
 from sklearn.metrics import recall_score
 r_score = recall_score( y_test, predicted )
 
-print "Recall score: ", p_score
+print("Recall score: ", p_score)

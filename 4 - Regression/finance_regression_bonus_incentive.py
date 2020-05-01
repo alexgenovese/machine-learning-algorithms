@@ -46,14 +46,14 @@ reg.fit(feature_train, target_train)
 
 reg.predict(feature_test)
 
-print "Slope: ", reg.coef_
-print "Intercept: ", reg.intercept_
+print("Slope: ", reg.coef_)
+print("Intercept: ", reg.intercept_)
 
-print "###### - stats on test dataset - #######"
-print "r-squared score: ", reg.score(feature_test, target_test)
+print("###### - stats on test dataset - #######")
+print("r-squared score: ", reg.score(feature_test, target_test))
 
-print "###### - stats on training dataset - #######"
-print "r-squared score: ", reg.score(feature_train, target_train)
+print("###### - stats on training dataset - #######")
+print("r-squared score: ", reg.score(feature_train, target_train))
 
 ### draw the scatterplot, with color-coded training and testing points
 import matplotlib.pyplot as plt
