@@ -1,2 +1,2 @@
-nltk==3.5
+nltk==3.9
 scikit_learn==0.22.2.post1
